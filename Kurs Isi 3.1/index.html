@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bank of Huso</h1>
+    <hr>
+    <div class="main"> 
+
+    <div class="dax-yeri">
+        <h2>Dəyişiləcək miqdar:</h2>
+        <input type="text" placeholder="0.00" class="dey-meb">
+    </div>
+
+    <div class="Mezenne">
+        <div class="verilen">
+            <span class="verilen-1">From</span>
+            <select  class="from1" >
+                <option value="">Birini seçin …</option>
+                <option value="USD">USD</option>
+                <option value="AZN">AZN</option>
+                <option value="RUB">RUB</option>
+                <option value="TRY">TRY</option>
+            </select>
+        </div>
+
+        <div class="alinan">
+            <span class="alinan-1">To </span>
+            <select class="to2">
+                <option value="">Birini seçin …</option>
+                <option value="USD">USD</option>
+                <option value="AZN">AZN</option>
+                <option value="RUB">RUB</option>
+                <option value="TRY">TRY</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="text-center">
+  
+    
+        <button class="btn btn-primary convert m-2" 
+                type="submit">
+             Dəyişmək
+      </button>
+        <button class="btn btn-primary m-2" 
+                onclick="clearVal()">
+           Sıfırlama
+      </button>
+    </div>
+
+    </div>
+    <div class="text-center" id="finalAmount">
+            <h2>Nəticə:
+            <span class="finalValue" style="color:brown"></span>
+        </h2>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
